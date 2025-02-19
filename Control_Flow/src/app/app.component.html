@@ -18,7 +18,8 @@
 }
 
 <hr>
-<button (click)="toggleTwo()">Toggle Div</button>
+<button (click)="toggleTwo()">{{
+  toggleDiv?'Show Yellow':'Show DarkGreen'}}</button>
 @if(toggleDiv){
   <div style="height: 300px; width: 300px; background-color: darkgreen;"></div>
 }
