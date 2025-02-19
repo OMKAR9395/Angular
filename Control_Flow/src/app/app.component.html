@@ -1,0 +1,28 @@
+<h1>If Else | Control Flow</h1>
+<!-- @if(x==10){
+
+  
+  <div style="height: 200px; width: 200px; background-color: aqua;"></div>
+
+} -->
+<button (click)="hide()">Hide Div</button>
+<button (click)="show()">Show Div</button>
+<button (click)="toggle()">Toggle Div</button>
+
+@if(display){
+
+  <div style="height: 200px; width: 200px; background-color: aqua;">
+
+  </div>
+
+}
+
+<hr>
+<button (click)="toggleTwo()">Toggle Div</button>
+@if(toggleDiv){
+  <div style="height: 300px; width: 300px; background-color: darkgreen;"></div>
+}
+@else {
+  <div style="height: 300px; width: 300px; background-color: yellow;"></div>
+
+}
