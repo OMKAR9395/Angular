@@ -1,0 +1,20 @@
+<h1>For Loop In Template File</h1>
+<br><br>
+@for (user of users; track user) {
+  <h2>{{user}}</h2>
+}
+<br><br>
+<hr>
+<br><br>
+@for (student of students; track student;let id= $index) {
+  <h1>
+    <span>{{id + 1}} </span>
+    <span>{{student.name}}</span>
+    <span>{{student.age}}</span>
+    <span>{{student.email}}</span>
+    <span>{{student.mobNo}}</span>
+    <button (click)="getName(student.name)"> Click Here</button>
+  </h1>
+}
+<h1>{{Val}}</h1>
+
