@@ -1,0 +1,14 @@
+<h1>Signal in Angular </h1>
+<!-- <br><br>
+<h1>{{x}}</h1>
+<h1>{{count}}</h1>
+<h1>{{count()}}</h1>
+<button (click)="increaseValue()">Increase Value</button> -->
+
+<!-- <button (click)="updateVal('inc')">Increment Value</button>
+<h1>{{count()}}</h1>
+<button (click)="updateVal('dec')">Increment Value</button> -->
+
+<button (click)="count.set(count()+1)">Increment Value</button>
+<h1>{{count()}}</h1>
+<button (click)="count.set(count()-1)">Decrement Value</button>
