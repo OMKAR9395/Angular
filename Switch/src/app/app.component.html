@@ -1,0 +1,26 @@
+<h1>Switch Statements</h1>
+<br><br>
+<button (click)="handleColor('red')">red</button>
+<button (click)="handleColor('blue')">blue</button>
+<button (click)="handleColor('green')">green</button>
+<button (click)="handleColor('black')">black</button>
+<button (click)="handleColor('yellow')">yellow</button>
+<input type="text" placeholder="Enter  Color  Name" (input)="changeColor($event)">
+
+@switch (color) {
+  @case ('red') {
+    <h1 style="background-color: red;">Red Color</h1>
+  }
+  @case ('blue') {
+    <h1 style="background-color: blue;">blue Color</h1>
+  }
+  @case ('green') {
+    <h1 style="background-color: green;">green Color</h1>
+  }
+  @case ('black') {
+    <h1 style="background-color: black;">black Color</h1>
+  }
+  @default {
+    <h1>No Color Match</h1>
+  }
+}
